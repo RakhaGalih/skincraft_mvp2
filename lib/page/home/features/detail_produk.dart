@@ -14,9 +14,9 @@ class DetailProdukPage extends StatefulWidget {
 class _DetailProdukPageState extends State<DetailProdukPage> {
   int _selectedIndex = 0;
   final List<String> _images = [
-    'assets/image/ban.jpg',
-    'assets/image/ban2.jpg',
-    'assets/image/ban3.jpg'
+    'assets/image/lotion.jpg',
+    'assets/image/serum.jpg',
+    'assets/image/skincare.jpg'
   ];
   @override
   Widget build(BuildContext context) {
@@ -115,21 +115,21 @@ class _DetailProdukPageState extends State<DetailProdukPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Lokomotif',
+                    'Kecocokan: 90%',
                     style: kRegularTextStyle.copyWith(fontSize: 12),
                   ),
                   const SizedBox(
                     height: 8,
                   ),
                   Text(
-                    'Accelera 651 Sport TW 200',
+                    'Ordinary set',
                     style: kBoldTextStyle.copyWith(fontSize: 16),
                   ),
                   const SizedBox(
                     height: 8,
                   ),
                   Text(
-                    'Rp. 20.000',
+                    'Rp.45.000',
                     style:
                         kBoldTextStyle.copyWith(fontSize: 16, color: kYellow),
                   ),

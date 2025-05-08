@@ -75,6 +75,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Expanded(
               child: GridView.builder(
+                padding: const EdgeInsets.only(top: 20),
                 itemCount: DataDummy.products.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
@@ -115,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                               product.imagePath,
                               height: 125.0,
                               width: double.infinity,
-                              fit: BoxFit.contain,
+                              fit: BoxFit.cover,
                             ),
                             const SizedBox(height: 12.0),
                             Text(
@@ -123,9 +124,23 @@ class _HomePageState extends State<HomePage> {
                               style: kRegularTextStyle.copyWith(fontSize: 14),
                             ),
                             const SizedBox(height: 4.0),
+
                             Text(
-                              '${product.soldCount} Sold',
-                              style: kMediumTextStyle.copyWith(fontSize: 14),
+                              'Atoderm Intensive Gel-Creme',
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 2,
+                              style: kRegularTextStyle.copyWith(
+                                fontSize: 12,
+                                color: kGreyText,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'Rp.${product.soldCount}',
+                              style: kBoldTextStyle.copyWith(
+                                fontSize: 16,
+                                color: kYellow,
+                              ),
                             ),
                             const Spacer(),
                             Align(
@@ -136,14 +151,14 @@ class _HomePageState extends State<HomePage> {
                                         text: TextSpan(
                                           children: [
                                             TextSpan(
-                                              text: 'Stock ',
+                                              text: 'Kecocokan: ',
                                               style: kRegularTextStyle.copyWith(
                                                 fontSize: 14,
                                                 color: Colors.black,
                                               ),
                                             ),
                                             TextSpan(
-                                              text: product.stock.toString(),
+                                              text: "${product.stock}%",
                                               style: kRegularTextStyle.copyWith(
                                                 fontSize: 14,
                                                 color: Colors.green,

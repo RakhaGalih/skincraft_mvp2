@@ -1,4 +1,3 @@
-
 import 'package:skincraft_mvp2/common/customization.dart';
 
 import '../../model/dummy/phone_code_model.dart';
@@ -28,22 +27,22 @@ class DataDummy {
 
   static List<Product> products = [
     Product(
-      name: 'AFG Motor oil 350ml',
-      imagePath: 'assets/image/oil.png',
+      name: 'Ordinary set',
+      imagePath: 'assets/image/lotion.jpg',
       soldCount: 45000,
-      stock: 22,
+      stock: 80,
     ),
     Product(
-      name: 'Accelera 651 Sport TW 200',
-      imagePath: 'assets/image/ban.png',
-      soldCount: 10,
-      stock: 2,
+      name: 'Atoderm Intensive Gel-Creme',
+      imagePath: 'assets/image/skincare.jpg',
+      soldCount: 55000,
+      stock: 90,
     ),
     Product(
-      name: 'RR Motorcycle Exhaust 12V',
-      imagePath: 'assets/image/exhaust.png',
-      soldCount: 10,
-      stock: 0,
+      name: 'Originote Hyluronic Acid Serum',
+      imagePath: 'assets/image/serum.jpg',
+      soldCount: 100000,
+      stock: 60,
     ),
   ];
 
