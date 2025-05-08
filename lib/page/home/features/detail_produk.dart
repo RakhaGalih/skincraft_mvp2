@@ -41,7 +41,7 @@ class _DetailProdukPageState extends State<DetailProdukPage> {
                         return Image.asset(
                           _images[index],
                           height: double.infinity,
-                          fit: BoxFit.fitHeight,
+                          fit: BoxFit.cover,
                         );
                       }),
                   Align(
